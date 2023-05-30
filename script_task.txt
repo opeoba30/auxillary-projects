@@ -16,6 +16,8 @@ echo "Hello $name! You were born in $birth_year."
 
 mkdir $name && cd $name
 
+cd ..
+
 du -sh * | sort -hr
 
 find . -maxdepth 1 -type f | wc -l
@@ -30,6 +32,8 @@ done
 echo "The sum is $sum"
 
 echo $((RANDOM % 100 + 1))
+
+# 7. 
 
 # 8. This command below will check whether the google website is up or down and output the status message from the web server. If the website is up, you will see a status code of 200 OK. If the website is down, you will see a different status code.
 
