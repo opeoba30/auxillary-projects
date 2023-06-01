@@ -18,9 +18,15 @@ mkdir $name && cd $name
 
 cd ..
 
+# 3. Listing all files in the current directory, sorted by file size
+
 du -sh * | sort -hr
 
+# 4. Counting the number of files in the current directory and output the result.
+
 find . -maxdepth 1 -type f | wc -l
+
+# 5. Taking a list of numbers as input from the user and output the sum of those numbers
 
 echo "Enter numbers separated by space"
 read -a arr
@@ -30,6 +36,8 @@ do
    sum=$((sum+i))
 done
 echo "The sum is $sum"
+
+# 6. Output a random number between 1 and 100
 
 echo $((RANDOM % 100 + 1))
 
