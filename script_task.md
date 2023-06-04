@@ -42,9 +42,8 @@ echo "The sum is $sum"
 echo $((RANDOM % 100 + 1))
 
 # 7. 
-cp script_task.sh.bak
 mkdir bakup-dir
-mv 
+mv -b script_task.sh /bakup-dir
 # 8. This command below will check whether the google website is up or down and output the status message from the web server. If the website is up, you will see a status code of 200 OK. If the website is down, you will see a different status code.
 
 curl -Is http://www.google.com | head -1
